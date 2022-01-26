@@ -1,72 +1,59 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="zh-tw">
 
-<head>
-    <title>NCKU ISP</title>
-    <meta name="Author" content="Yen Cheng Chu and ">
-    <meta http-equiv="imagetoolbar" content="no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="style/index.css" rel="stylesheet">
+    <head>
+        <title>NCKU ISP</title>
+        <meta name="Author" content="Yen Cheng Chu and wilicw">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="imagetoolbar" content="no">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="style/index.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css">
+    </head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.2.0/markdown-it.min.js"
-        integrity="sha512-cTQeM/op796Fp1ZUxfech8gSMLT/HvrXMkRGdGZGQnbwuq/obG0UtcL04eByVa99qJik7WlnlQOr5/Fw5B36aw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <!--script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.2.0/markdown-it.js"
-        integrity="sha512-ivJskyHEWoa1WrFlVDWM7o8I7ZKt2dF97kUVMKHT4CPSWxZ7VHuCydjiED3pjOpN0WuT2XA3pK4HrZYNsZ4OqA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script-->
-</head>
-
-<body>
-    <header>
-    </header>
-
-    <!-- Navigator -->
-    <nav class="top-view">
-        <div>
-            <img src="./ISP_logo.svg">
-
-            <div>
-                <h3>成大太空推進研究社</h3>
-                <span>Institute of Space Propulsion</span>
+    <body>
+        <!-- Navigator -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 99999;">
+            <div class="container max_width">
+                <img src="./ISP_logo.svg" alt="logo of ISP" width="43" height="auto" class="my-3">
+                <div class="navbar-brand mx-md-4">
+                    <div class="row">
+                        <div class="col">成大太空推進研究社</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">Institute of Space Propulsion</div>
+                    </div>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <div class="navbar-nav me-auto"></div>
+                    <ul class="navbar-nav" id="navbar_items"></ul>
+                </div>
             </div>
-
-            <div class="navigator">
-                <ul id="navigator-container">
-                </ul>
+        </nav>
+        <nav aria-label="breadcrumb" class="bg-dark sticky-top mb-3 ">
+            <div class="max_width" style="margin: auto;">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item text-muted">Library</li>
+                </ol>
             </div>
+        </nav>
+        <div class='container max_width' id="main">
+            <div id="top"></div>
         </div>
-    </nav>
-    <div class='main-content'>
-        <!-- Main -->
-        <section id="page-team">
-            <div id="content-team">
+        <!-- Footer -->
+        <footer class="py-5 bg-dark">
+            <div id="contact" class="py-3">
+                <p class="text-center text-white h6 py-3">聯絡方式</p>
             </div>
-        </section>
-        <section id="page-activities">
-            <div id="activities-intro"></div>
-            <div id="activities-articles"></div>
-        </section>
-        <section id="page-projects">
-            <div id="projects-intro"></div>
-            <div id="projects-articles"></div>
-        </section>
-        <section id="page-products">
-            <div id="products-intro"></div>
-            <div id="products-articles"></div>
-        </section>
-        <section id="page-contact">
-            <div id="content-contact">
-            </div>
-        </section>
-    </div>
+            <i class="bi bi-facebook"></i>
+            <p class="text-center text-muted">© <span id="year"></span> NCKU ISP</p>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/12.2.0/markdown-it.min.js"></script>
+        <script src="./js/app.js"></script>
+    </body>
 
-    <!-- Footer -->
-    <footer>
-        <p>701 臺南市東區大學路一號</p>
-        <p>成功大學光復校區 學生活動中心四樓</p>
-        <p>aerogroup2020@gmail.com</p>
-    </footer>
-    <script src="./js/app.js"></script>
-</body>
+</html>
