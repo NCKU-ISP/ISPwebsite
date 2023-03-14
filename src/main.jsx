@@ -8,7 +8,7 @@ import {
 import App from './App';
 import Home from './routers/Home';
 import About from './routers/About';
-import Mission from './routers/Mission';
+import Missions from './routers/Missions';
 import Projects from './routers/Projects';
 import Teams from './routers/Teams';
 import Splash from './routers/projects/Splash/Splash';
@@ -27,8 +27,8 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "mission",
-        element: <Mission />,
+        path: "missions",
+        element: <Missions />,
       },
       {
         path: "projects",

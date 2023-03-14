@@ -14,12 +14,12 @@ function App() {
       url: '/team'
     },
     {
-      text: 'Mission',
-      url: '/mission'
+      text: 'Missions',
+      url: '/missions'
     },
     {
       text: 'Projects',
-      url: '/Projects'
+      url: '/projects'
     },
   ];
 
@@ -88,8 +88,11 @@ function App() {
           <p className='py-1'>701401 臺南市東區大學路一號</p>
           <p className='py-1'>國立成功大學 光復校區 學生活動中心 4 樓</p>
           <div className='mx-auto flex gap-5 justify-center items-center text-sm text-gray-600 pt-8'>
+            <a href="https://opensource.org/licenses/BSD-3-Clause" target="_blank">Open Source License</a>
+            <a href="https://archive.nckuisp.space" target="_blank">Old Website</a>
+          </div>
+          <div className='mx-auto flex gap-5 justify-center items-center text-sm text-gray-600 pt-8'>
             <a href="#" target="_blank">&copy; {new Date().getFullYear()} NCKU ISP</a>
-            {/* <a href="https://opensource.org/licenses/BSD-3-Clause" target="_blank">Open Source License</a> */}
           </div>
         </div>
       </div>

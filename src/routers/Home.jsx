@@ -1,4 +1,6 @@
 import './Home.css';
+import logo_CPL from '../logos/CPL.gif';
+import logo_HackMD from '../logos/HackMD.svg';
 
 function Home() {
   return (
@@ -23,11 +25,10 @@ function Home() {
       <div className='bg-zinc-100 mx-auto max-w-5xl rounded-xl p-10 my-10' style={{ color: "#383838" }}>
         <p className='text-2xl font-bold pb-3'>合作夥伴</p>
         <hr className="border-sky-400 w-10 border-b-2 rounded-sm" />
-        <div className='flex items-center pt-5'>
-          <br />
-          <br />
-          <br />
-          <br />
+        <div className='flex items-center pt-5 gap-5 flex-wrap'>
+          <a className="grayscale hover:grayscale-0 opacity-50 hover:opacity-100 m-0 p-0 w-1/5" href="https://sites.google.com/gs.ncku.edu.tw/yungscpl" target="_blank"><img src={logo_CPL} title="國立成功大學燃燒與推進實驗室" /></a>
+          
+          <a className="grayscale hover:grayscale-0 opacity-50 hover:opacity-100 m-0 p-0 w-1/5" href="https://hackmd.io/" target="_blank"><img src={logo_HackMD} title="HackMD" /></a>
         </div>
       </div>
     </>

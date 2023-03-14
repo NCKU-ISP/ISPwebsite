@@ -4,6 +4,7 @@ import { teams, projects_list } from "../pages_data";
 
 function Projects() {
   const [filter, setFilter] = useState(null);
+  const selectedStyle = 'font-semibold italic underline underline-offset-4'
 
   return (
     <>
@@ -11,12 +12,12 @@ function Projects() {
         <p className="text-3xl decorative mb-5">Our Projects</p>
         <div className="flex gap-5 flex-wrap justify-center select-none">
           <button
-            className={filter == null && 'font-semibold'}
+            className={filter == null && selectedStyle}
             onClick={() => setFilter(() => null)}
           >
             All
           </button>
-          {teams.map(t => <button className={filter == t && 'font-semibold italic'} onClick={() => setFilter(t)}>{t.name.en}</button>)}
+          {teams.map(t => <button className={filter == t && selectedStyle} onClick={() => setFilter(t)}>{t.name.en}</button>)}
         </div>
 
         <div className="mt-5">

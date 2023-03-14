@@ -153,4 +153,138 @@ const projects_list = [
   },
 ];
 
-export { teams, projects_list };
+const mission_classifications = [
+  {
+    name: {
+      zh: "飛行測試",
+      en: "LAUNCHES"
+    },
+    description: "",
+  },
+  // {
+  //   name: {
+  //     zh: "發動機推力測試",
+  //     en: "Thrust Test"
+  //   },
+  //   description: "",
+  // },
+];
+
+const missions = [
+  {
+    date: 1671321600000,
+    title: "雁丞一號 v3.2",
+    missions: [
+      "DL 開傘系統 v1",
+      "發動機環 v3.1 強度",
+      "新型點火系統（EIS v2.1）",
+      "ESP NOW 通訊距離",
+      "地面站及時圖表",
+    ],
+    classification: mission_classifications[0],
+  },
+  {
+    date: 1668816000000,
+    title: "雁丞一號 v3.1",
+    missions: [
+      "新型點火系統（EIS V2.1）適當電壓範圍"
+    ],
+    classification: mission_classifications[0],
+  },
+  {
+    date: 1667606400000,
+    title: "迷你火箭",
+    missions: [
+      "社員自製迷你火箭",
+      "展示用小火箭"
+    ],
+    classification: mission_classifications[0],
+  },
+  {
+    date: 1653696000000,
+    title: "雁丞一號 v3.0",
+    missions: [
+      "航電系統穩定性",
+      "開傘機構 v3",
+      "艦載攝影機架 v2"
+    ],
+    classification: mission_classifications[0],
+  },
+  {
+    date: 1648339200000,
+    title: "雁丞一號 v2.2 & 雁丞三號",
+    missions: [
+      "雁丞一號 - 全系統穩定性再驗證",
+      "雁丞三號 - 展開機翼結構之飛行測試"
+    ],
+    classification: mission_classifications[0],
+  },
+  {
+    date: 1634947200000,
+    title: "雁承一號 v2.2",
+    missions: [
+      "改良版開傘系統",
+      "航電通訊",
+      "箭載攝影機架",
+      "滑塊整合之結構",
+      "全箭飛行穩定性",
+      "社員迷你火箭體驗"
+    ],
+    classification: mission_classifications[0],
+  },
+  {
+    date: 1633132800000,
+    title: "雁承一號 v2.1",
+    missions: [
+      "航電板數據紀錄、傳輸、及穩定性",
+      "PVC 箭身之結構強度"
+    ],
+    classification: mission_classifications[0],
+  },
+  {
+    date: 1632528000000,
+    title: "雁丞一號 v2.0",
+    missions: [
+      "遠端點火系統",
+      "簡易地面站運作",
+      "開傘機構穩定性",
+      "降落傘"
+    ],
+    classification: mission_classifications[0],
+  },
+  {
+    date: 1665705600000,
+    title: "Coyote v1",
+    missions: [
+      "Explosive parachute ejection mechanism",
+      "Metal solid-state motor",
+      "Nipple launch rail",
+    ],
+    classification: mission_classifications[0],
+  },
+  {
+    date: 1670025600000,
+    title: "Coyote v2",
+    missions: [
+      "Explosive parachute ejection mechanism",
+      "20cm Nipple made solid-state motor",
+      "Nipple made launch rail",
+      "Reaction wheel for spin control",
+      "Video transmission",
+      "New ground station interface",
+    ],
+    classification: mission_classifications[0],
+  },
+  {
+    date: 1671148800000,
+    title: "Coyote Dummy",
+    missions: [
+      "20cm Nipple made solid-state motor",
+      "Nipple made launch rail",
+      "New rail button",
+    ],
+    classification: mission_classifications[0],
+  },
+];
+
+export { teams, projects_list, mission_classifications, missions };
